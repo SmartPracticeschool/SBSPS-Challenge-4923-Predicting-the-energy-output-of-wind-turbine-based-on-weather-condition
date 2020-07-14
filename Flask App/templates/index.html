@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>"Testing"</title>
+    <style>
+    body{
+	background-color: #002a3f;
+	padding:0;
+	margin:0;
+}
+label{
+	color:white;
+	height:60px;
+	width:250px;
+	background-color:#f5af09;
+	position:absolute;
+	margin:auto;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	font-size:20px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-family:"Montserrat",sans-serif;
+}
+#sub
+{
+	color:white;
+	height:60px;
+	width:250px;
+	background-color:#f5af09;
+	position:absolute;
+	margin:auto;
+	top:0;
+	left:0;
+	right:0;
+	bottom:-200px;
+	font-size:20px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-family:"Montserrat",sans-serif;
+}
+</style>
+</head>
+<body>
+   <h1 style="color:white" align="center">WIND ENERGY PREDICTION</h1>
+   <h2 style="color:white;position:absolute;top:200px;left:550px">Choose your csv file here</h2>
+   <form action="http://localhost/upload/fileupload.php"  method="post"  enctype="multipart/form-data">
+	   <input type="file" name="file" id="file" style="display:none"/></div>
+       <label for="file">
+           Choose File here
+       </label>
+	   <input type="submit" id="sub"/>
+   </form>
+</body>
+</html>
